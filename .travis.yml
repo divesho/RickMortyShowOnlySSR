@@ -1,0 +1,9 @@
+sudo: required
+services:
+    - docker
+
+before_install:
+    - docker build -t rickmortyshowimg .
+
+script:
+    - docker run -p 8082:8082 -e CI=true rickmortyshowimg npm run test
