@@ -23,5 +23,5 @@ node server/index
 ```
 or 
 ```
-node server
+node server 
 ```
