@@ -1,7 +1,7 @@
 module.exports = {
     "port": "8082",
     "db": {
-        "host": process.env.MONGO_URI || "mongodb://localhost:27017/",
+        "host": process.env.MONGO_URI || "mongodb+srv://admin:Pa$$word@cluster0-owhwz.mongodb.net/",
         "user": "",
         "password": "",
         "db": "test"

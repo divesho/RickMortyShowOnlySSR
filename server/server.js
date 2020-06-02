@@ -23,7 +23,7 @@ app.listen(CONFIG.port, () => {
 
 mongoose.connect(
   `${CONFIG.db.host}${CONFIG.db.db}`,
-  {useFindAndModify: false}
+  {useFindAndModify: false, useNewUrlParser: true}
 )
 .then(()=> {
   
