@@ -4,7 +4,7 @@ EXPOSE 8082
 
 WORKDIR /usr/app/client
 
-COPY ./package.json ./
+COPY ./package*.json ./
 
 RUN npm install
 

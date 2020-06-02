@@ -6,4 +6,16 @@ before_install:
     - docker build -t rickmortyshowimg .
 
 script:
-    - docker run -p 8082:8082 -e CI=true rickmortyshowimg npm run test
+    - docker run -p 8082:8082 -e MONGO_URI=$MONGO_URL -e CI=true rickmortyshowimg npm run test
+
+deploy:
+    provider: elasticbeanstalk
+    region: "ap-south-1"
+    app: docker
+    env: "Docker-env"
+    bucket_name: "elasticbeanstalk-ap-south-1-116253824321"
+    bucket_path: "docker"
+    on:
+        branch: master
+    access_key_id: $AWS_ACCESS_KEY
+    secret_access_key: $AWS_SECRET_KEY

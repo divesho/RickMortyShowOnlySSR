@@ -4,7 +4,7 @@ module.exports = {
         "host": process.env.MONGO_URI || "mongodb://localhost:27017/",
         "user": "",
         "password": "",
-        "db": "rickMortyShow"
+        "db": "test"
     },
     "bcrypt": {
         "salt": 10
