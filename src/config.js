@@ -1,5 +1,5 @@
 const CONFIG = {
-    "apiUrl": "http://localhost:8082/api/",
+    "apiUrl": "http://docker-env.eba-5w3hw2aw.ap-south-1.elasticbeanstalk.com/api/",
     "cookie": {
         "tokenName": "jwtToken",
         "userPref": "userPreferences",

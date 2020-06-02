@@ -14,5 +14,5 @@ module.exports = {
         "expiresIn": 3600
     },
     "apiUrl": "https://rickandmortyapi.com/api/character/",
-    "INTERNAL_SERVER_URI": process.env.INTERNAL_SERVER_URI || "http://localhost:8082/api/"
+    "INTERNAL_SERVER_URI": process.env.INTERNAL_SERVER_URI || "http://docker-env.eba-5w3hw2aw.ap-south-1.elasticbeanstalk.com/api/"
 };

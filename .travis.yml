@@ -6,7 +6,7 @@ before_install:
     - docker build -t rickmortyshowimg .
 
 script:
-    - docker run -p 8082:8082 -e MONGO_URI=$MONGO_URL -e CI=true rickmortyshowimg npm run test
+    - docker run -p 8082:8082 -e MONGO_URI=$MONGO_URL -e INTERNAL_SERVER_URI=$INTERNAL_SERVER_URI -e CI=true rickmortyshowimg npm run test
 
 deploy:
     provider: elasticbeanstalk
